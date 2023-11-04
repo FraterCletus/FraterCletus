@@ -1,8 +1,8 @@
 # MLA Outline Builder
 # Variables and Lists
+#By Frater Cletus 4 November 2023
 roman = ('I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X')
 caps = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
-ltr = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
 
 # Capture more information
 title = input('What is the title of your document? ')
@@ -56,4 +56,6 @@ for i in range(I):
         for m in range(arab):
             print(f'        {n}. ')
             n += 1
-            
+            print('             a.')
+            print('             b.')
+            print('             c.')
