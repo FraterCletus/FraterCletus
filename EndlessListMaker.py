@@ -7,4 +7,4 @@ while a <= b:
     entry = input('Enter a string: ')
     section.append(entry)
     print(section)#Prints list contents
-    print(len(section))#Prints number of items on list
+
