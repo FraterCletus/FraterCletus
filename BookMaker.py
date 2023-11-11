@@ -1,10 +1,14 @@
-my_dict = {}
-b = input("How many items are in this dictionary? ")
-b = int(b)
+contents = ['Security', 'Privacy', 'Compliance']
 
-for a in range(b):
-    key = input("Enter Key: ")
-    val = input("Enter Value: ")
-    my_dict[key] = val
+df = {}
+definitions = []
 
-print("Dictionary:", my_dict)
+for term in contents:
+    define = input(f"Definition of '{term}': ")
+    definitions.append(define)
+
+df = dict.fromkeys(contents)
+for i, term in enumerate(df):
+    df[term] = definitions[i]
+
+print(df)
