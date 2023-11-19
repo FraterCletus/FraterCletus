@@ -1,0 +1,22 @@
+#Drop this line of code at the end of dictionary maker or instant dictionary to turn your file into a JSON object.
+import json
+
+# Python dictionary Here!
+python_dict = df
+
+# Specify the file path make sure to touch file name in linux CLI
+file_path = "output.json"
+
+# Append the JSON data to the file
+with open(file_path, "a+") as json_file:
+    # Move the file cursor to the end to append
+    json_file.seek(0, 2)
+    
+    # If the file is not empty, add a comma before appending
+    if json_file.tell() > 0:
+        json_file.write(",\n")
+
+    # Convert the Python dictionary to JSON and write to the file
+    json.dump(python_dict, json_file, indent=4)
+#redefine ****python_dict*** with custom dictionary variable to complete operations, if needed.
+print(f"JSON data has been appended to {file_path}")
