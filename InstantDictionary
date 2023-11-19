@@ -2,7 +2,7 @@
 print("This code helps build a custom list of keys, then builds a dictionary from this list. It is brilliant for compiling key:value pairs. Use in conjunction with JSON maker to convert dictionary into JSON format or build more dictionaries")
 section = []
 a = 0
-b = input('How many items on your list? ')
+b = input('How many keys do you need for your python dictionary? ')
 b = int(b)
 b = b - 1
 while a <= b:
@@ -24,5 +24,7 @@ for term in contents:
 df = dict.fromkeys(contents)
 for i, term in enumerate(df):
     df[term] = definitions[i]
+print('Here is your list of dictionary keys')
 print(section)
+print('Your new dictionary')
 print(df)
