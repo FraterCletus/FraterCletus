@@ -1,0 +1,21 @@
+import csv
+
+# Converts output from dictionary maker to new variable
+python_dict = df############
+################
+#<========================= Specify the CSV file path
+csv_file_path = "output.csv"
+
+# Open the CSV file in append mode
+with open(csv_file_path, "a", newline="") as csv_file:
+    # Create a CSV writer
+    csv_writer = csv.writer(csv_file)
+
+    # If the file is not empty, add a header row
+    if csv_file.tell() == 0:
+        csv_writer.writerow(python_dict.keys())
+
+    # Write the data
+    csv_writer.writerow(python_dict.values())
+
+print(f"CSV data has been appended to {csv_file_path}")
