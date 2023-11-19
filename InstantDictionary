@@ -1,0 +1,28 @@
+#Built 19/11/23 by Matthew Thomasson
+print("This code helps build a custom list of keys, then builds a dictionary from this list. It is brilliant for compiling key:value pairs. Use in conjunction with JSON maker to convert dictionary into JSON format or build more dictionaries")
+section = []
+a = 0
+b = input('How many items on your list? ')
+b = int(b)
+b = b - 1
+while a <= b:
+    entry = input('Enter a string: ')
+    section.append(entry)
+    print(section)#Prints list contents
+    a += 1
+#Build dictionary rom list
+contents = section #transitions from list maker to dictionary builder
+
+df = {}
+definitions = []
+
+for term in contents:
+    define = input(f"Definition of '{term}': ")
+    definitions.append(define)
+    print()
+
+df = dict.fromkeys(contents)
+for i, term in enumerate(df):
+    df[term] = definitions[i]
+print(section)
+print(df)
