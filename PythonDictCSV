@@ -9,7 +9,7 @@ csv_file_path = "output.csv"
 # Open the CSV file in append mode
 with open(csv_file_path, "a", newline="") as csv_file:
     # Create a CSV writer
-    csv_writer = csv.writer(csv_file)
+    csv_writer = csv.writer(csv_file) # delimiter="\t") if you want a TSV
 
     # If the file is not empty, add a header row
     if csv_file.tell() == 0:
