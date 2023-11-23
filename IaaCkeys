@@ -1,5 +1,40 @@
 rg = ['resource_type', 'resource_name', 'name', 'location', 'tags']
+#Bookmaker
+print(f"resource *"{df['resource_type']}\" \"{df['resource_name']}\" {{\n"
+      f"  name    = \"{df['name']}\"\n"
+      f"  location= \"{df['location']}\"\n"
+      f"  tags    = {df['tags']}\n"
+      f"}}")
 vn = ['resource_type', 'resource_name', 'name', 'address_space', 'location', 'subnets', 'tags']
+#Bookmaker
+print(f"resource *"{df['resource_type']}\" \"{df['resource_name']}\" {{\n"
+      f"  name          = \"{df['name']}\"\n"
+      f"  address_space = \"{df['location']}\"\n"
+      f"  location      = {df['location']}\n"
+      f"  subnets       = {df['subnets']}\n"
+      f"  tags          = {df['tags']}\n"
+      f"}}")
 nsg = ['resource_type', 'resource_name', 'name', 'location', 'rules', 'tags']
+#Bookmaker
+print(f"resource *"{df['resource_type']}\" \"{df['resource_name']}\" {{\n"
+      f"  name     = \"{df['name']}\"\n"
+      f"  location = \"{df['location']}"\n"
+      f"  rules    = {df['rules']}\n"
+      f"  tags     = {df['tags']}\n"
+      f"}}")
 vm = ['resource_type', 'resource_name', 'name', 'location', 'size', 'os_disk_size_gb', 'network_interface_ids', 'tags']
+#Bookmaker
+print(f"resource *"{df['resource_type']}\" \"{df['resource_name']}\" {{\n"
+      f"  name                  = \"{df['name']}\"\n"
+      f"  location              = \"{df['location']}\"\n"
+      f"  size                  = {df['size']}\n"
+      f"  os_disk_size_gb       = {df['os_disk_size_gb']}\n"
+      f"  network_interface_ids = {df['network_interface_ids']}\n"
+      f"  tags                  = {df['tags']}\n"
+      f"}}")
 ssh_to_vm = ['resource_type', 'resource_name', 'public_key', 'username']
+#Bookmaker
+print(f"resource *"{df['resource_type']}\" \"{df['resource_name']}\" {{\n"
+      f"  public_key  = \"{df['public_key']}\"\n"
+      f"  username    = \"{df['username']}\"\n"
+      f"}}")
