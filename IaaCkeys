@@ -1,6 +1,5 @@
 rg = ['resource_type', 'resource_name', 'name', 'location', 'tags']
 vn = ['resource_type', 'resource_name', 'name', 'address_space', 'location', 'subnets', 'tags']
-nsg = ['resource_type', 'resource_name', 'name', 'location', 'security_rules', 'tags']
-firewall = ['resource_type', 'resource_name', 'name', 'location', 'rules', 'tags']
+nsg = ['resource_type', 'resource_name', 'name', 'location', 'rules', 'tags']
 vm = ['resource_type', 'resource_name', 'name', 'location', 'size', 'os_disk_size_gb', 'network_interface_ids', 'tags']
 ssh_to_vm = ['resource_type', 'resource_name', 'public_key', 'username']
